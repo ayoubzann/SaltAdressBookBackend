@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "G9ND46H65O6jI9m+lTX35i63ubKb3Xa83z6w0vtCFxo=",
+  "Source": "SaltAdressBookBackend",
+  "BasePath": "_content/SaltAdressBookBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
