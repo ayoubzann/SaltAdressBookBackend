@@ -31,7 +31,7 @@ public class AddressController : ControllerBase
             Country = adr.Country,
             Person = adr.Person,
             PersonID = adr.PersonID
-            
+
         }).ToList();
 
         return AddressResponse;
@@ -66,4 +66,28 @@ public class AddressController : ControllerBase
 
         return Ok(response);
     }
+
+    [HttpPost]
+    public IActionResult CreateNewAddress(AddressRequest request)
+    {
+        var nextId = _db.Addresses.Count;
+
+        var newAdr = new Address()
+        {
+            ID = nextId,
+            AddressLine = request.AddressLine,
+            Number = request.Number,
+            PostCode = request.PostCode,
+            City = request.City,
+            ApartmentNo = request.ApartmentNo,
+            Country = request.Country,
+        };
+
+        _db.Addresses.Add(newAdr);
+
+        return CreatedAtAction(nameof(GetAddressById), new { id = nextId }, newAdr);
+    }
+
+
 }
+

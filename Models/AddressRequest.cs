@@ -28,7 +28,5 @@ public class AddressRequest
     [Required(ErrorMessage = "You need to select the country where the address is")]
     public Countries Country { get; set; }
 
-    public Person Person {get; set;}
-    public int PersonID {get; set;}
 
 }
