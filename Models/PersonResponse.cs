@@ -1,9 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace SaltAddressBookBackend.Models;
-
-
-public class Person
+public class PersonResponse
 {
     public int ID { get; set; }
     public string FirstName { get; set; }

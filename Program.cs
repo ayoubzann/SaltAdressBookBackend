@@ -1,4 +1,5 @@
-using SaltAddressBookBackend;
+using SaltAddressBookBackend.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

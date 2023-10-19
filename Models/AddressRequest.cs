@@ -1,9 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace SaltAddressBookBackend.Models;
-
-
-public class Address
+public class AddressRequest
 {
     public int ID { get; set; }
 
